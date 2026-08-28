@@ -1,3 +1,30 @@
+const SOURCE_FILES = {
+    admission: '北京大学软件与微电子学院2026级电子信息专业硕士研究生入学注意事项及交费须知.pdf',
+    medicalFee: '北京大学软件与微电子学院2026级新生体检交费须知.pdf',
+    profile: '北京大学软件与微电子学院2026年关于新生完善个人信息及关注微信企业号的说明.pdf',
+    exam: '关于2026级新生参加校规校纪线上考试的通知及附件.pdf',
+    insurance: '关于参加学生团体保险项目的通知.pdf',
+    luggageTag: '校本部研究生新生行李签.pdf',
+    hukou: '北京大学新生户口迁移.txt'
+};
+
+const TASK_SOURCES = {
+    tuition: [SOURCE_FILES.admission],
+    'medical-fee': [SOURCE_FILES.medicalFee, SOURCE_FILES.admission],
+    'student-loan': [SOURCE_FILES.admission],
+    profile: [SOURCE_FILES.profile, SOURCE_FILES.admission],
+    exam: [SOURCE_FILES.exam, SOURCE_FILES.admission],
+    luggage: [SOURCE_FILES.admission, SOURCE_FILES.luggageTag],
+    pack: [SOURCE_FILES.admission, SOURCE_FILES.profile],
+    shuttle: [SOURCE_FILES.admission],
+    report: [SOURCE_FILES.admission],
+    'hukou-original': [SOURCE_FILES.admission, SOURCE_FILES.hukou],
+    insurance: [SOURCE_FILES.insurance, SOURCE_FILES.admission],
+    portrait: [SOURCE_FILES.admission],
+    'medical-exam': [SOURCE_FILES.admission, SOURCE_FILES.medicalFee],
+    'hukou-online': [SOURCE_FILES.hukou]
+};
+
 const TASKS = [
     { id: 'tuition', date: '8月27日 · 今天', title: '缴纳学费与住宿费', category: '缴费', deadline: '2026-08-27T23:59:59+08:00', deadlineLabel: '官方截止：8月27日', detail: '第一学年学费 30,000 元；大兴住宿另缴 1,020 元。缴费前确认 icampus 中邮箱和 11 位手机号准确。' },
     { id: 'medical-fee', date: '8月27日 · 立即处理', title: '核实体检费是否已缴', category: '健康', deadline: '2026-08-17T23:59:59+08:00', deadlineLabel: '原截止：8月17日 · 已逾期', detail: '体检费 139.30 元，所有新生必须参加入学体检。尚未缴费时立即联系学院确认补缴方式。' },
@@ -92,6 +119,13 @@ function renderTasks() {
         titleCopy.append(tags, makeElement('h4', '', task.title));
         titleRow.append(titleCopy);
         body.append(titleRow, makeElement('p', 'task-detail', task.detail));
+
+        const sources = makeElement('div', 'task-sources');
+        sources.append(makeElement('span', 'source-label', '出处'));
+        const sourceList = makeElement('div', 'source-list');
+        (TASK_SOURCES[task.id] || []).forEach(fileName => sourceList.append(makeElement('span', 'source-file', fileName)));
+        sources.append(sourceList);
+        body.append(sources);
 
         const footer = makeElement('div', 'task-footer');
         footer.append(makeElement('span', 'task-deadline', task.deadlineLabel));
