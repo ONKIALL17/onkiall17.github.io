@@ -43,21 +43,146 @@ const TASKS = [
 ];
 
 const STORAGE_KEY = 'houjue-pku-schedule-v1';
+const APPWRITE_CONFIG = {
+    endpoint: 'https://sgp.cloud.appwrite.io/v1',
+    projectId: 'onkiallpage',
+    databaseId: 'pku-schedule',
+    tableId: 'schedule-state'
+};
 const defaultState = { completed: [], notes: {}, generalNote: '' };
 let state = loadState();
 let activeFilter = 'all';
+let currentUser = null;
+let syncTimer = null;
+let appwriteAccount = null;
+let appwriteTables = null;
+
+function normalizeState(value) {
+    const taskIds = new Set(TASKS.map(task => task.id));
+    const completed = Array.isArray(value?.completed) ? [...new Set(value.completed.filter(id => taskIds.has(id)))] : [];
+    const notes = value?.notes && typeof value.notes === 'object' && !Array.isArray(value.notes) ? value.notes : {};
+    return {
+        completed,
+        notes,
+        generalNote: typeof value?.generalNote === 'string' ? value.generalNote : ''
+    };
+}
 
 function loadState() {
     try {
         const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY));
-        return parsed ? { ...defaultState, ...parsed } : { ...defaultState };
+        return parsed ? normalizeState(parsed) : normalizeState(defaultState);
     } catch {
-        return { ...defaultState };
+        return normalizeState(defaultState);
     }
 }
 
 function saveState() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    if (currentUser) scheduleRemoteSave();
+}
+
+function setSyncStatus(kind, label) {
+    const indicator = document.querySelector('#sync-indicator');
+    indicator.className = `sync-indicator ${kind}`;
+    document.querySelector('#sync-status').textContent = label;
+}
+
+function updateSyncControls(isLoggedIn) {
+    document.querySelector('#sync-login').hidden = isLoggedIn;
+    document.querySelector('#sync-logout').hidden = !isLoggedIn;
+}
+
+function getPrivatePermissions(userId) {
+    return [
+        Appwrite.Permission.read(Appwrite.Role.user(userId)),
+        Appwrite.Permission.update(Appwrite.Role.user(userId)),
+        Appwrite.Permission.delete(Appwrite.Role.user(userId))
+    ];
+}
+
+function scheduleRemoteSave() {
+    window.clearTimeout(syncTimer);
+    setSyncStatus('syncing', '正在同步…');
+    syncTimer = window.setTimeout(saveRemoteState, 550);
+}
+
+async function saveRemoteState() {
+    if (!currentUser || !appwriteTables) return;
+    window.clearTimeout(syncTimer);
+    try {
+        await appwriteTables.upsertRow({
+            databaseId: APPWRITE_CONFIG.databaseId,
+            tableId: APPWRITE_CONFIG.tableId,
+            rowId: currentUser.$id,
+            data: { state: JSON.stringify(state) },
+            permissions: getPrivatePermissions(currentUser.$id)
+        });
+        setSyncStatus('synced', '云端已同步');
+    } catch (error) {
+        console.error('Appwrite sync failed', error);
+        setSyncStatus('error', '云端同步失败，本地已保存');
+    }
+}
+
+function applyState(nextState) {
+    state = normalizeState(nextState);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    const generalNote = document.querySelector('#general-note');
+    if (generalNote) generalNote.value = state.generalNote;
+    renderTasks();
+    updateSummary();
+}
+
+async function loadRemoteState() {
+    setSyncStatus('syncing', '正在读取云端…');
+    try {
+        const row = await appwriteTables.getRow({
+            databaseId: APPWRITE_CONFIG.databaseId,
+            tableId: APPWRITE_CONFIG.tableId,
+            rowId: currentUser.$id
+        });
+        applyState(JSON.parse(row.state));
+        setSyncStatus('synced', '云端已同步');
+    } catch (error) {
+        if (error?.code === 404) {
+            await saveRemoteState();
+            return;
+        }
+        console.error('Appwrite load failed', error);
+        setSyncStatus('error', '云端读取失败，继续本地保存');
+    }
+}
+
+async function activateSync(user) {
+    currentUser = user;
+    updateSyncControls(true);
+    await loadRemoteState();
+}
+
+function getLoginError(error) {
+    if (error?.code === 401) return '邮箱或密码不正确。';
+    if (error?.code === 429) return '尝试次数过多，请稍后再试。';
+    return '登录失败，请检查网络后重试。';
+}
+
+async function initializeSync() {
+    if (!window.Appwrite) {
+        setSyncStatus('error', '同步组件加载失败，本地保存可用');
+        return;
+    }
+    const client = new Appwrite.Client()
+        .setEndpoint(APPWRITE_CONFIG.endpoint)
+        .setProject(APPWRITE_CONFIG.projectId);
+    appwriteAccount = new Appwrite.Account(client);
+    appwriteTables = new Appwrite.TablesDB(client);
+    try {
+        await activateSync(await appwriteAccount.get());
+    } catch (error) {
+        if (error?.code !== 401) console.error('Appwrite session check failed', error);
+        updateSyncControls(false);
+        setSyncStatus('local', '本地保存');
+    }
 }
 
 function getStatus(task, isDone) {
@@ -180,7 +305,7 @@ generalNote.addEventListener('input', event => {
 document.querySelector('#print-schedule').addEventListener('click', () => window.print());
 document.querySelector('#clear-schedule').addEventListener('click', () => {
     if (window.confirm('确定清空所有完成状态和备注吗？此操作无法撤销。')) {
-        state = { ...defaultState, notes: {} };
+        state = normalizeState(defaultState);
         generalNote.value = '';
         saveState();
         renderTasks();
@@ -188,6 +313,57 @@ document.querySelector('#clear-schedule').addEventListener('click', () => {
     }
 });
 
+const syncDialog = document.querySelector('#sync-dialog');
+const syncForm = document.querySelector('#sync-form');
+const syncError = document.querySelector('#sync-error');
+const syncSubmit = document.querySelector('#sync-submit');
+
+document.querySelector('#sync-login').addEventListener('click', () => {
+    syncError.hidden = true;
+    syncDialog.showModal();
+    document.querySelector('#sync-email').focus();
+});
+
+document.querySelector('#sync-dialog-close').addEventListener('click', () => syncDialog.close());
+syncDialog.addEventListener('click', event => {
+    if (event.target === syncDialog) syncDialog.close();
+});
+
+syncForm.addEventListener('submit', async event => {
+    event.preventDefault();
+    syncError.hidden = true;
+    syncSubmit.disabled = true;
+    syncSubmit.textContent = '正在登录…';
+    try {
+        await appwriteAccount.createEmailPasswordSession({
+            email: syncForm.elements.email.value.trim(),
+            password: syncForm.elements.password.value
+        });
+        syncForm.elements.password.value = '';
+        syncDialog.close();
+        await activateSync(await appwriteAccount.get());
+    } catch (error) {
+        syncError.textContent = getLoginError(error);
+        syncError.hidden = false;
+    } finally {
+        syncSubmit.disabled = false;
+        syncSubmit.textContent = '登录并同步';
+    }
+});
+
+document.querySelector('#sync-logout').addEventListener('click', async () => {
+    try {
+        await appwriteAccount.deleteSession({ sessionId: 'current' });
+    } catch (error) {
+        console.error('Appwrite logout failed', error);
+    }
+    currentUser = null;
+    window.clearTimeout(syncTimer);
+    updateSyncControls(false);
+    setSyncStatus('local', '已退出 · 本地保存');
+});
+
 document.querySelector('#current-year').textContent = new Date().getFullYear();
 renderTasks();
 updateSummary();
+initializeSync();

@@ -17,6 +17,7 @@
     <meta name="twitter:image" content="https://onkiall17.github.io/og.png">
     <title>侯爵 · PKUer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@26.2.0" defer></script>
     <script src="script.js" defer></script>
 </head>
 <body>
@@ -90,7 +91,13 @@
                     <div>
                         <p class="section-kicker light">2026 Enrollment · 入学</p>
                         <h2>新生入学日程</h2>
-                        <p>根据入学、缴费、体检、保险、户口和考试通知整理；每项下方均标注依据文件。勾选与备注保存在当前浏览器。</p>
+                        <p>根据入学、缴费、体检、保险、户口和考试通知整理；每项下方均标注依据文件。未登录时记录保存在当前浏览器，站点所有者登录后自动同步。</p>
+                        <div class="sync-control" aria-live="polite">
+                            <span id="sync-indicator" class="sync-indicator local" aria-hidden="true"></span>
+                            <span id="sync-status">本地保存</span>
+                            <button id="sync-login" type="button">所有者登录</button>
+                            <button id="sync-logout" class="sync-logout" type="button" hidden>退出同步</button>
+                        </div>
                     </div>
                     <div class="schedule-progress" aria-label="日程完成进度">
                         <div><span>总进度</span><strong id="progress-value">0%</strong></div>
@@ -144,5 +151,19 @@
     <footer class="footer">
         <div class="page-shell"><span>侯爵 · PKUer</span><p>学习 · 创造 · 记录</p><small>© <span id="current-year">2026</span> Houjue</small></div>
     </footer>
+
+    <dialog id="sync-dialog" class="sync-dialog" aria-labelledby="sync-dialog-title">
+        <form id="sync-form" class="sync-form">
+            <div class="sync-dialog-heading">
+                <div><p class="card-eyebrow">Owner sync</p><h2 id="sync-dialog-title">登录个人同步</h2></div>
+                <button id="sync-dialog-close" class="dialog-close" type="button" aria-label="关闭登录窗口">×</button>
+            </div>
+            <p>仅供站点所有者使用。登录后会自动读取云端进度；首次登录会上传当前浏览器中的勾选和备注。</p>
+            <label>邮箱<input id="sync-email" name="email" type="email" autocomplete="username" required></label>
+            <label>密码<input id="sync-password" name="password" type="password" autocomplete="current-password" minlength="8" required></label>
+            <p id="sync-error" class="sync-error" role="alert" hidden></p>
+            <button id="sync-submit" class="sync-submit" type="submit">登录并同步</button>
+        </form>
+    </dialog>
 </body>
 </html>
