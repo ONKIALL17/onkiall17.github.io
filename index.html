@@ -30,6 +30,7 @@
                 <li><a href="#about">关于</a></li>
                 <li><a href="#skills">技能</a></li>
                 <li><a href="#schedule">入学日程</a></li>
+                <li><a href="#timetable">我的课表</a></li>
                 <li><a href="#contact">联系</a></li>
             </ul>
         </div>
@@ -91,7 +92,7 @@
                     <div>
                         <p class="section-kicker light">2026 Enrollment · 入学</p>
                         <h2>新生入学日程</h2>
-                        <p>根据入学、缴费、体检、保险、户口和考试通知整理；每项下方均标注依据文件。未登录时记录保存在当前浏览器，站点所有者登录后自动同步。</p>
+                        <p>根据入学、缴费、体检、保险、户口、考试与选课通知整理。每项均列出操作步骤、关键提醒和可打开的原始文件；未登录时记录保存在当前浏览器，站点所有者登录后自动同步。</p>
                         <div class="sync-control" aria-live="polite">
                             <span id="sync-indicator" class="sync-indicator local" aria-hidden="true"></span>
                             <span id="sync-status">本地保存</span>
@@ -102,7 +103,7 @@
                     <div class="schedule-progress" aria-label="日程完成进度">
                         <div><span>总进度</span><strong id="progress-value">0%</strong></div>
                         <div class="progress-track"><span id="progress-bar"></span></div>
-                        <p><span id="progress-count">0 / 14 项完成</span><span id="urgent-count">0 项近期事项</span></p>
+                        <p><span id="progress-count">0 / 19 项完成</span><span id="urgent-count">0 项近期事项</span></p>
                     </div>
                 </header>
 
@@ -110,11 +111,11 @@
                     <aside class="schedule-sidebar">
                         <article class="date-card">
                             <p class="card-eyebrow">计划基准</p>
-                            <strong>08.27</strong>
-                            <span>2026 年 · 星期四</span>
+                            <strong>09.01</strong>
+                            <span>2026 年 · 星期二</span>
                             <hr>
-                            <h3>今天优先</h3>
-                            <ol><li>缴纳学费与住宿费</li><li>核实体检费补缴</li><li>尽早通过线上考试</li></ol>
+                            <h3>当前优先</h3>
+                            <ol><li>核对培养计划与课程编号</li><li>9月4日 8:30前完成初选</li><li>确认入学遗留事项均已处理</li></ol>
                         </article>
                         <label class="general-note" for="general-note">我的总备注
                             <textarea id="general-note" placeholder="例如：8月30日 14:20 抵达北京南站…"></textarea>
@@ -137,6 +138,45 @@
                         <div id="task-list" class="task-list" aria-live="polite"></div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="timetable" class="section timetable-section">
+            <div class="page-shell">
+                <header class="section-heading horizontal-heading timetable-heading">
+                    <div><p class="section-kicker">My timetable · 课表</p><h2>把课程放进一周。</h2></div>
+                    <p>课表内容完整提取自学院排课表。先在课程库中搜索并加入课程，再切换到“我的课表”查看周视图；选课会随日程记录一起本地保存或同步到个人云端。</p>
+                </header>
+
+                <div class="timetable-alert" role="note">
+                    <strong>选课红线</strong>
+                    <span>电子信息与工程管理课程不可互选；电子信息每学期选课超过 <b>21 学分</b>，选课无效。学院上课时段与校本部不同，请以排课表为准。</span>
+                    <a href="files/course-selection-guide.doc" target="_blank" rel="noopener noreferrer">打开选课说明 ↗</a>
+                </div>
+
+                <div class="timetable-toolbar">
+                    <div class="semester-switch" role="group" aria-label="选择学期">
+                        <button class="active" type="button" data-semester="2026-fall">2026 秋季</button>
+                        <button type="button" data-semester="2027-spring">2027 春季</button>
+                    </div>
+                    <div class="view-switch" role="group" aria-label="选择课表视图">
+                        <button class="active" type="button" data-course-view="week">我的课表</button>
+                        <button type="button" data-course-view="catalog">课程库</button>
+                    </div>
+                    <label class="course-search">搜索课程、教师或编号
+                        <input id="course-search" type="search" placeholder="例如：机器学习 / 01718120">
+                    </label>
+                </div>
+
+                <div id="timetable-summary" class="timetable-summary" aria-live="polite"></div>
+                <div id="week-view" class="week-view" aria-live="polite"></div>
+                <div id="course-catalog" class="course-catalog" aria-live="polite" hidden></div>
+
+                <footer class="timetable-source">
+                    <span>课表出处</span>
+                    <a href="files/course-table.xls" target="_blank" rel="noopener noreferrer">《1-1课表-电子信息和MEM（26-27学年度课表）0825.xls》↗</a>
+                    <a href="files/academic-calendar.pdf" target="_blank" rel="noopener noreferrer">《北京大学2026—2027学年校历.pdf》↗</a>
+                </footer>
             </div>
         </section>
 

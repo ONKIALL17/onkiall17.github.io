@@ -1,0 +1,2086 @@
+{
+  "generatedFrom": "1-1课表-电子信息和MEM（26-27学年度课表）0825.xls",
+  "semesters": [
+    {
+      "id": "2026-fall",
+      "label": "2026 秋季",
+      "range": "2026.09.07—2027.01.10",
+      "weeks": "18 周"
+    },
+    {
+      "id": "2027-spring",
+      "label": "2027 春季",
+      "range": "2027.02.22—2027.06.27",
+      "weeks": "18 周"
+    }
+  ],
+  "slotTimes": {
+    "上午": "08:30—11:30",
+    "下午": "14:00—17:00",
+    "晚上": "18:00—21:00",
+    "待定": "以课程群或教务通知为准"
+  },
+  "courses": [
+    {
+      "id": "2026-fall-01",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "22105348",
+      "name": "中国式现代化的理论与实践",
+      "teacher": "习院",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "报告厅",
+          "raw": "5348-1班/报告厅"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "1班关键软件、人工智能、软件工程、新兴交叉学科四个方向上课，单周，13：00-17：00，每次课四课时。选课由学院、研究生院共同完成，所有同学请勿在系统选课。"
+    },
+    {
+      "id": "2026-fall-02",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "22105348",
+      "name": "中国式现代化的理论与实践",
+      "teacher": "习院",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "报告厅",
+          "raw": "5348-2班/报告厅"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "2班集成电路工程、金融科技、网络与信息安全、高端芯片四个方向上课，双周，13：00-17：00，每次课四课时。选课由学院、研究生院共同完成，所有同学请勿在系统选课。"
+    },
+    {
+      "id": "2026-fall-03",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710101",
+      "name": "自然辩证法概论（1班）",
+      "teacher": "朱效民",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "报告厅",
+          "raw": "0101-1班/报告厅"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "限关键软件、人工智能、软件工程、新兴交叉学科方向选课，9月15日开课，每次课4课时，1班授课时间为13：00-17:00；"
+    },
+    {
+      "id": "2026-fall-04",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710101",
+      "name": "自然辩证法概论（2班）",
+      "teacher": "待通知",
+      "hours": "16",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "晚上",
+          "room": "报告厅",
+          "raw": "0101-2班/报告厅"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "限集成电路工程、金融科技、网络与信息安全、高端芯片方向选课，9月15日开课，每次课4课时，2班授课时间为18:00-22:00"
+    },
+    {
+      "id": "2026-fall-05",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711870",
+      "name": "综合实践（1班）-软件工程与数据技术系",
+      "teacher": "导师小组",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "软件工程、人工智能方向学生选课"
+    },
+    {
+      "id": "2026-fall-06",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711870",
+      "name": "综合实践（2班）-网络软件与系统安全系",
+      "teacher": "导师小组",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "丁玉",
+      "note": "网络与信息安全方向学生选课"
+    },
+    {
+      "id": "2026-fall-07",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711870",
+      "name": "综合实践（3班）-集成电路与智能系统系",
+      "teacher": "导师小组",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "丁玉",
+      "note": "集成电路工程方向学生选课"
+    },
+    {
+      "id": "2026-fall-08",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711870",
+      "name": "综合实践（4班）-金融信息与工程管理系",
+      "teacher": "导师小组",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "梁洁",
+      "note": "金融科技方向学生选课"
+    },
+    {
+      "id": "2026-fall-09",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "1710110",
+      "name": "英语（1班）",
+      "teacher": "李博婷",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "上午",
+          "room": "3305",
+          "raw": "0110-1班/3305"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "人工智能、软件工程方向学生选课"
+    },
+    {
+      "id": "2026-fall-10",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710110",
+      "name": "英语（2班）",
+      "teacher": "李博婷",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "下午",
+          "room": "3305",
+          "raw": "0110-2班/3305"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "集成电路工程、金融科技、网络与信息安全学生选课"
+    },
+    {
+      "id": "2026-fall-11",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710110",
+      "name": "英语（3班）",
+      "teacher": "高志军",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "上午",
+          "room": "3201",
+          "raw": "0110-3班/3201"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "学术写作，仅限关键软件、高端芯片、新兴交叉学科方向选修"
+    },
+    {
+      "id": "2026-fall-12",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710042",
+      "name": "素质教育与前沿技术-01班",
+      "teacher": "素质教育教研室",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周六",
+          "slot": "上午",
+          "room": "3204、 / 报告厅",
+          "raw": "0042/3204、 / 报告厅"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-13",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710043",
+      "name": "职业道德与素养-01班",
+      "teacher": "素质教育教研室",
+      "hours": "16",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周六",
+          "slot": "上午",
+          "room": "3204、 / 报告厅",
+          "raw": "0042/3204、 / 报告厅"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": "26级新生勿选"
+    },
+    {
+      "id": "2026-fall-14",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01712630",
+      "name": "数字图象处理",
+      "teacher": "曹喜信",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "上午",
+          "room": "3203",
+          "raw": "2630/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-15",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01715340",
+      "name": "微纳系统集成",
+      "teacher": "王振宇",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "5340/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-16",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01714353",
+      "name": "集成电路器件与工艺",
+      "teacher": "黎明、黄芊芊、吴恒",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "4353/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-17",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01713990",
+      "name": "集成电路前沿技术导论",
+      "teacher": "刘力锋、王玮、崔小欣",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "3990/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-18",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01715200",
+      "name": "数字集成电路设计",
+      "teacher": "于敦山",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "上午",
+          "room": "3203",
+          "raw": "5200/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-19",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01715890",
+      "name": "微电子前沿技术专题",
+      "teacher": "时广轶",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周六",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "5890/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-20",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01714020",
+      "name": "物联网与智慧系统",
+      "teacher": "王振宇",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3203",
+          "raw": "4020/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-21",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01713120",
+      "name": "数字集成电路设计实践",
+      "teacher": "曹健",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "晚上",
+          "room": "1202",
+          "raw": "3120/1202"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": "适合集成电路工程方向学生选修"
+    },
+    {
+      "id": "2026-fall-22",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01715220",
+      "name": "模拟集成电路设计与分析",
+      "teacher": "时广轶",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "晚上",
+          "room": "3203",
+          "raw": "5220/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-23",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01714354",
+      "name": "大语言模型与应用实践",
+      "teacher": "俞敬松",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3201",
+          "raw": "4354/3201"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-24",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711100",
+      "name": "算法分析与设计-01班",
+      "teacher": "张齐勋",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "1100-1班/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "面向金融科技方向、新兴交叉学科-数字人文社科方向"
+    },
+    {
+      "id": "2026-fall-25",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711100",
+      "name": "算法分析与设计-02班",
+      "teacher": "孙圣力",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "1100-2班/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "面向技术类方向"
+    },
+    {
+      "id": "2026-fall-26",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711100",
+      "name": "算法分析与设计-03班",
+      "teacher": "李聪",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3201",
+          "raw": "1100-3班/3201"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "面向技术类方向"
+    },
+    {
+      "id": "2026-fall-27",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01714822",
+      "name": "Agent智能体开发与实践",
+      "teacher": "夏敏",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "上午",
+          "room": "3201",
+          "raw": "4822/3201"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-28",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01700145",
+      "name": "学科专著研读-01班",
+      "teacher": "导师小组",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "仅限关键软件、高端芯片、新兴交叉学科方向选修"
+    },
+    {
+      "id": "2026-fall-29",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710167",
+      "name": "科研实践（I）",
+      "teacher": "导师小组",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "仅限25级关键软件、高端芯片方向选修、新兴交叉学科方向选修"
+    },
+    {
+      "id": "2026-fall-30",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710166",
+      "name": "科研实践（II）",
+      "teacher": "导师小组",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "仅限24级关键软件、高端芯片方向选修"
+    },
+    {
+      "id": "2026-fall-31",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719960",
+      "name": "Python-01班",
+      "teacher": "夏敏",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "9960-1班/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "双周上课"
+    },
+    {
+      "id": "2026-fall-32",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719960",
+      "name": "Python-02班",
+      "teacher": "方跃坚",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "9960-2班/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "双周上课"
+    },
+    {
+      "id": "2026-fall-33",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01712460",
+      "name": "大数据分析技术与实践-01班",
+      "teacher": "贾统",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "上午",
+          "room": "3202",
+          "raw": "2460-1班/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "仅限关键软件、新兴交叉学科方向选修"
+    },
+    {
+      "id": "2026-fall-34",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710285",
+      "name": "操作系统与虚拟化安全",
+      "teacher": "沈晴霓",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "0285/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "仅限关键软件、新兴交叉学科方向选修"
+    },
+    {
+      "id": "2026-fall-35",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711930",
+      "name": "互联网软件开发技术与实践",
+      "teacher": "张齐勋",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3204",
+          "raw": "1930/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-36",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711990",
+      "name": "开源软件开发基础及实践",
+      "teacher": "荆琦",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "上午",
+          "room": "3202",
+          "raw": "1990/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-37",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01714330",
+      "name": "云计算技术及应用",
+      "teacher": "莫同",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "4330-1班/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-38",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01710190",
+      "name": "JAVA编程技能训练",
+      "teacher": "褚伟杰",
+      "hours": "16",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "上午",
+          "room": "1202",
+          "raw": "4860/1202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-39",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01704860",
+      "name": "深度强化学习",
+      "teacher": "周立新",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "晚上",
+          "room": "3201",
+          "raw": "4860/3201"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-40",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01718120",
+      "name": "机器学习",
+      "teacher": "蒋严冰、李素科",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "上午",
+          "room": "3204",
+          "raw": "8120/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-41",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01711510",
+      "name": "软件实现技术",
+      "teacher": "蒋严冰",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "1510/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-42",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719140",
+      "name": "金融数据分析",
+      "teacher": "李素科",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "上午",
+          "room": "3202",
+          "raw": "9140/3202"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-43",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719320",
+      "name": "面向金融的Python",
+      "teacher": "褚伟杰",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3202",
+          "raw": "9320/3202"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-44",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01716440",
+      "name": "金融营销学",
+      "teacher": "赵占波",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "上午",
+          "room": "1208",
+          "raw": "6440/1208"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-45",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719680",
+      "name": "金融科技理论与实践",
+      "teacher": "黄嵩",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "上午",
+          "room": "3204",
+          "raw": "9680/3204"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-46",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719890",
+      "name": "量化投资策略与技术",
+      "teacher": "刘宏志",
+      "hours": "48",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "晚上",
+          "room": "3203",
+          "raw": "9890/3203"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-47",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01716420",
+      "name": "机器学习",
+      "teacher": "李伟平",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "晚上",
+          "room": "3204",
+          "raw": "6420/3204"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": "仅限金融信息与工程管理系、新兴交叉学科（数字人文社科方向）选修"
+    },
+    {
+      "id": "2026-fall-48",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719270",
+      "name": "金融工程与风险管理",
+      "teacher": "李昕旸",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "晚上",
+          "room": "3204",
+          "raw": "9270/3204"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-49",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01714819",
+      "name": "大模型在金融中的应用实践",
+      "teacher": "李素科",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "晚上",
+          "room": "3202",
+          "raw": "4819/3202"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-50",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01714812",
+      "name": "数字经济",
+      "teacher": "倪宣明",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "3201",
+          "raw": "4812/3201"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-51",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01719220",
+      "name": "金融产品创新",
+      "teacher": "王德全",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "9220/3202"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-52",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01712190",
+      "name": "人工智能模型安全",
+      "teacher": "李聪",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "2190/3202"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-53",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01712250",
+      "name": "应用密码学",
+      "teacher": "关志",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "上午",
+          "room": "3201",
+          "raw": "2250/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-54",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01712430",
+      "name": "操作系统与虚拟化安全",
+      "teacher": "沈晴霓",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "上午",
+          "room": "3201",
+          "raw": "2430/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2026-fall-55",
+      "semester": "2026-fall",
+      "semesterLabel": "2026 秋季",
+      "code": "01716960",
+      "name": "网络空间安全导论",
+      "teacher": "沈晴霓、文伟平、方跃坚、李聪、孙惠平",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3201",
+          "raw": "6960/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-01",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710110",
+      "name": "英语1班",
+      "teacher": "李博婷",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "上午",
+          "room": "3305",
+          "raw": "0110-01班/3305"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-02",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710110",
+      "name": "英语2班",
+      "teacher": "李博婷",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "下午",
+          "room": "3305",
+          "raw": "0110-02班/3305"
+        }
+      ],
+      "coordinator": "赵泽宇",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-03",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-1班",
+      "teacher": "导师小组（林慧苹负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "26级软件系必修"
+    },
+    {
+      "id": "2027-spring-04",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-2班",
+      "teacher": "导师小组（莫同负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "26级软件系必修"
+    },
+    {
+      "id": "2027-spring-05",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-3班",
+      "teacher": "导师小组（荆琦负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "26级软件系必修"
+    },
+    {
+      "id": "2027-spring-06",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-4班",
+      "teacher": "导师小组（孙圣力负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "26级软件系必修"
+    },
+    {
+      "id": "2027-spring-07",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-5班",
+      "teacher": "导师小组（张齐勋负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "26级软件系必修"
+    },
+    {
+      "id": "2027-spring-08",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-6班",
+      "teacher": "导师小组（倪宣明负责）",
+      "hours": "16",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "晚上",
+          "room": "3204",
+          "raw": "0051-6班/3204"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": "26级金融信息与工程管理系必修"
+    },
+    {
+      "id": "2027-spring-09",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-7班",
+      "teacher": "导师小组（曹喜信负责）",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "0051-7班/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": "26级集成系（非高端芯片）必修，第1-6周周五下午上课"
+    },
+    {
+      "id": "2027-spring-10",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-8班",
+      "teacher": "导师小组（文伟平负责）",
+      "hours": "16",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "晚上",
+          "room": "3201",
+          "raw": "0051-8班/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": "26级安全必修，第12-16周周三晚上上课"
+    },
+    {
+      "id": "2027-spring-11",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-9班",
+      "teacher": "导师小组（李聪负责）",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3201",
+          "raw": "0051-9班/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": "26级安全必修，第1-6周周五下午上课"
+    },
+    {
+      "id": "2027-spring-12",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-10班",
+      "teacher": "导师小组（沈晴霓负责)",
+      "hours": "16",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3202",
+          "raw": "0051-10班/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "单周上课，仅限26级关键软件方向、 新兴交叉学科必修"
+    },
+    {
+      "id": "2027-spring-13",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-11班",
+      "teacher": "导师小组（李伟平负责)",
+      "hours": "16",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3202",
+          "raw": "0051-11班/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "双周上课，仅限26级关键软件方向、 新兴交叉学科必修"
+    },
+    {
+      "id": "2027-spring-14",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "1710051",
+      "name": "论文写作指导与规范-12班",
+      "teacher": "导师小组（刘力锋负责）",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "0051-12班/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": "26级高端芯片方向必修,第7、8、9、10周周五下午13:00-17:00上课"
+    },
+    {
+      "id": "2027-spring-15",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-13班",
+      "teacher": "导师小组（林慧苹负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊+丁玉",
+      "note": "25级软件+安全必修"
+    },
+    {
+      "id": "2027-spring-16",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-14班",
+      "teacher": "导师小组（莫同负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊+丁玉",
+      "note": "25级软件+安全必修"
+    },
+    {
+      "id": "2027-spring-17",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710051",
+      "name": "论文写作指导与规范-15班",
+      "teacher": "导师小组（莫同负责）",
+      "hours": "16",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊+丁玉",
+      "note": "25级软件+安全必修"
+    },
+    {
+      "id": "2027-spring-18",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01704169",
+      "name": "集成电路概论",
+      "teacher": "张兴、曹健",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "晚上",
+          "room": "3203",
+          "raw": "4169/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": "该课程是一门通识课程，适合所有专业学生，没有先修要求"
+    },
+    {
+      "id": "2027-spring-19",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01713480",
+      "name": "高等模拟集成电路设计",
+      "teacher": "鲁文高、沈林晓",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "上午",
+          "room": "3203",
+          "raw": "3480/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-20",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715330",
+      "name": "类脑与量子计算",
+      "teacher": "王振宇",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "1208",
+          "raw": "5330/1208"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-21",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01713210",
+      "name": "嵌入式微处理器系统",
+      "teacher": "曹喜信",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "上午",
+          "room": "3202",
+          "raw": "3210/3202"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-22",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01713470",
+      "name": "集成电路产业实践",
+      "teacher": "王振宇",
+      "hours": "32",
+      "slot": "上午+下午",
+      "meetings": [
+        {
+          "day": "周日",
+          "slot": "上午+下午",
+          "room": "企业",
+          "raw": "3470/企业"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": "仅限集成系学生选课，安排学生们到中芯国际等企业学习、交流和实践调研，共7-8个周末（7-8天），具体上课时间会在课程群中临时通知"
+    },
+    {
+      "id": "2027-spring-23",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01714352",
+      "name": "先进存储技术",
+      "teacher": "杜刚",
+      "hours": "48",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "上午",
+          "room": "3203",
+          "raw": "4352/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-24",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715345",
+      "name": "具身智能设计与实践",
+      "teacher": "曹健",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "5345/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-25",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715520",
+      "name": "低功耗CMOS IC设计",
+      "teacher": "崔小欣",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3203",
+          "raw": "5520/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-26",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01711870",
+      "name": "综合实践-08班",
+      "teacher": "导师小组（导师小组）",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "丁玉",
+      "note": "仅限高端芯片方向选课"
+    },
+    {
+      "id": "2027-spring-27",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01714246",
+      "name": "基于信息技术的财务分析",
+      "teacher": "邢恩泉",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3305",
+          "raw": "4246/3305"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-28",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01716940",
+      "name": "互联网商业模式创新",
+      "teacher": "赵占波、邬国锐、张齐勋",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "上午",
+          "room": "1207",
+          "raw": "6940/1207"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-29",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01719640",
+      "name": "投资管理与互联网理财",
+      "teacher": "赵岩",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "晚上",
+          "room": "3201",
+          "raw": "9640/3201"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-30",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715326",
+      "name": "公司金融与估值",
+      "teacher": "倪宣明",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "5326/3203"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-31",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715327",
+      "name": "金融计量与数据科学",
+      "teacher": "倪宣明",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "上午",
+          "room": "3203",
+          "raw": "5327/3203"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-32",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715329",
+      "name": "区块链与数字金融",
+      "teacher": "孙惠平",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "3201",
+          "raw": "5329/3201"
+        }
+      ],
+      "coordinator": "梁洁",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-33",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01718180",
+      "name": "自然语言处理",
+      "teacher": "常宝宝",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "上午",
+          "room": "3204",
+          "raw": "8180/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-34",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01714430",
+      "name": "数据挖掘及应用",
+      "teacher": "莫同",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "4430/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-35",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715335",
+      "name": "数据智能开发与实践",
+      "teacher": "莫同",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "5335/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-36",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01711820",
+      "name": "软件工程技术专题",
+      "teacher": "朱郑州",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "上午",
+          "room": "3204",
+          "raw": "1820/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-37",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715339",
+      "name": "基于智能体的软件开发实践",
+      "teacher": "朱郑州",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "5339/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-38",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715341",
+      "name": "人工智能安全技术与开源实践",
+      "teacher": "罗杨",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "上午",
+          "room": "3204",
+          "raw": "5341/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-39",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01714808",
+      "name": "人工智能项目过程管理",
+      "teacher": "朱郑州",
+      "hours": "16",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "晚上",
+          "room": "3203",
+          "raw": "4808/3203"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-40",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710298",
+      "name": "系统软件新技术",
+      "teacher": "黄罡、景翔",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "晚上",
+          "room": "3204",
+          "raw": "0298/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-41",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01711980",
+      "name": "人工智能应用开发",
+      "teacher": "方跃坚",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "1208",
+          "raw": "1980/1208"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-42",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01711280",
+      "name": "软件体系结构与设计",
+      "teacher": "蒋严冰",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周五",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "1280/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-43",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01712010",
+      "name": "深度学习开发技术",
+      "teacher": "周立新",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "2010/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-44",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715351",
+      "name": "知识图谱与大模型",
+      "teacher": "孙圣力",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周一",
+          "slot": "下午",
+          "room": "3204",
+          "raw": "5351/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-45",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01714806",
+      "name": "大语言模型后训练实践",
+      "teacher": "高志军",
+      "hours": "16",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "上午",
+          "room": "3204",
+          "raw": "4806/3204"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-46",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01714827",
+      "name": "生成式人工智能产品实践",
+      "teacher": "俞敬松",
+      "hours": "32",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "晚上",
+          "room": "3202",
+          "raw": "4827/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-47",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01711870",
+      "name": "综合实践-07班",
+      "teacher": "导师小组（导师小组）",
+      "hours": "—",
+      "slot": "待定",
+      "meetings": [],
+      "coordinator": "许博蕊",
+      "note": "仅限关键软件方向、 新兴交叉学科方向选课"
+    },
+    {
+      "id": "2027-spring-48",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710225",
+      "name": "高级系统软件技术",
+      "teacher": "罗杨",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "0225/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "仅限关键软件方向、 新兴交叉学科方向选课"
+    },
+    {
+      "id": "2027-spring-49",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01712020",
+      "name": "深度学习技术与应用",
+      "teacher": "李戈",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "3202",
+          "raw": "2020/3202"
+        }
+      ],
+      "coordinator": "许博蕊",
+      "note": "仅限关键软件方向、 新兴交叉学科方向选课"
+    },
+    {
+      "id": "2027-spring-50",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01712251",
+      "name": "大数据安全与隐私保护",
+      "teacher": "李聪",
+      "hours": "48",
+      "slot": "晚上",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "晚上",
+          "room": "3201",
+          "raw": "2251/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-51",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715343",
+      "name": "数据智能与安全实践",
+      "teacher": "方跃坚",
+      "hours": "32",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周三",
+          "slot": "下午",
+          "room": "3203",
+          "raw": "5343/3203"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-52",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01715342",
+      "name": "分布式信任与共识实践",
+      "teacher": "孙惠平",
+      "hours": "16",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "下午",
+          "room": "3201",
+          "raw": "5342/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-53",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01710217",
+      "name": "区块链技术与应用",
+      "teacher": "孙惠平",
+      "hours": "32",
+      "slot": "上午",
+      "meetings": [
+        {
+          "day": "周四",
+          "slot": "上午",
+          "room": "3201",
+          "raw": "0217/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    },
+    {
+      "id": "2027-spring-54",
+      "semester": "2027-spring",
+      "semesterLabel": "2027 春季",
+      "code": "01712580",
+      "name": "网络攻防技术与工具",
+      "teacher": "文伟平",
+      "hours": "48",
+      "slot": "下午",
+      "meetings": [
+        {
+          "day": "周二",
+          "slot": "下午",
+          "room": "3201",
+          "raw": "2580/3201"
+        }
+      ],
+      "coordinator": "丁玉",
+      "note": ""
+    }
+  ]
+}
